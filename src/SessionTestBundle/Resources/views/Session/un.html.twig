@@ -1,0 +1,13 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}SessionTestBundle:Session:un{% endblock %}
+
+{% block body %}
+<h1>Page 1</h1>
+    {% for msg in app.session.get('msg_page_1') %}
+        {{ msg }}
+    {% endfor %}
+    {{ app.session.get('msg_page_2') }}
+    <a href="{{ path('deux') }}">Page deux</a>
+    {#<input type="text" value="{{ app.session.get('msg_page_2') }}">#}
+{% endblock %}

@@ -1,0 +1,7 @@
+session_test:
+    resource: "@SessionTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

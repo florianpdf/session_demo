@@ -1,0 +1,11 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}SessionTestBundle:Session:trois{% endblock %}
+
+{% block body %}
+<h1>Page 3</h1>
+    <h2>Recapitulatif</h2>
+    <p>Champ un ==> {{ app.session.get('msg_page_1') }}</p>
+    <p>Champ deux ==> {{ app.session.get('msg_page_2') }}</p>
+    <a href="{{ path('valider') }}">valider</a>
+{% endblock %}

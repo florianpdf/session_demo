@@ -1,0 +1,10 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}SessionTestBundle:Session:deux{% endblock %}
+
+{% block body %}
+<h1>Page 2</h1>
+    {#<p>{{ app.session.get('msg_page_1') }}</p>#}
+    <a href="{{ path('un') }}">page 1</a>
+    <a href="{{ path('trois') }}">page 3</a>
+{% endblock %}

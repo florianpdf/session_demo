@@ -1,0 +1,19 @@
+session_test_homepage:
+    path:     /
+    defaults: { _controller: SessionTestBundle:Default:index }
+
+un:
+    path:     /un
+    defaults: { _controller: SessionTestBundle:Session:un }
+
+deux:
+    path:     /deux
+    defaults: { _controller: SessionTestBundle:Session:deux }
+
+trois:
+    path:     /trois
+    defaults: { _controller: SessionTestBundle:Session:trois }
+
+valider:
+    path:     /valider
+    defaults: { _controller: SessionTestBundle:Session:valider }

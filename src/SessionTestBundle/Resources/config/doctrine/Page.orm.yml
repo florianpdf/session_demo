@@ -1,0 +1,18 @@
+SessionTestBundle\Entity\Page:
+    type: entity
+    table: null
+    repositoryClass: SessionTestBundle\Repository\PageRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fieldUn:
+            type: string
+            length: 255
+        fieldDeux:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
